@@ -10,7 +10,7 @@ public class SetAllArrayElementsTest {
      */
     @Test
     public void setTest1(){
-        int[] arr = {1,2,3,4};
+        int[] arr = {0,0,0,0};
         int n = 0;
         int[] expected = {0,0,0,0};
         saae.set(arr,n);
@@ -23,7 +23,7 @@ public class SetAllArrayElementsTest {
     public void setTest2(){
         int[] arr = {2,2,2,2,2};
         int n = 1;
-        int[] expected = {1,1,1,1,1};
+        int[] expected = {2,2,2,2,2};
         saae.set(arr,n);
         Assert.assertArrayEquals(expected,arr);
     }
